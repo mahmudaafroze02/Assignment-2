@@ -13,7 +13,7 @@
 }
 
 
-        .nav-section, .grid-section, .section-3{
+        .nav-section, .grid-section, .section-3, .section-4  {
             margin-left: 130px;
             margin-right: 130px;
         }
@@ -92,17 +92,88 @@
    .gridh2{
     margin-bottom: 0px;
    }
+  
    /* grid end here */
+
+
    .section-3-info{
     display: flex
-    ;}
+    ;
+padding: 100px;}
     .feature{
-        width: 30%;
+        max-width: 40%;
     }
     .img2{
-        width: 30%;
+       max-width: 60%;
+    }
+    .img2>img{
+        width: 80%;
+        height: 90%;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .feature-style{
+        font-size: 30px;
+        font-weight: 700px;
+margin-bottom: 5px;
+       
     }
    
+    .feature-style-2{
+        font-size: 13px;
+        color: grey;
+    }
+.section-describe{
+    width: 100%;
+    border-color: whitesmoke;
+   box-shadow: 0px 7px 13px 7px whitesmoke;
+   padding: 1px 0px;
+}
+.description{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.section-3-button{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -70px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #ff900e;
+    color: white;
+    padding: 30px;
+    font-size: 15px;
+}
+.year-span{
+    font-size: 30px;
+}
+/* Section 3 End here */
+
+   /* Fact Image Start Here */
+
+   .fact-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+ 
+   }
+   .fact-img img{
+    padding-top: 10px;
+    
+   }
+   .fact-img  div{
+
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: #ff900e;
+    border-radius: 10px;
+    border-width: 2px;
+    text-align: center;
+   }
+  
    </style>
 </head>
 <body>
@@ -140,11 +211,7 @@
        <div><img src="/images/team4.png" alt=""></div>
     </div>
       
-      
-      
-      
-      
-       <div class="grid-info">
+      <div class="grid-info">
         <h2 class="gridh2">Quick list <span>of Our</span><br><span>Features</span></h2>
         <p>“Heroic Programming, usually a pejorative term, is used to describe <br> the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.</p>
        <div> <button class="explore">Explore More</button></div>
@@ -155,26 +222,69 @@
     <section class="section-3">
         
         <div class="section-3-info">
-            <div class="faeture">
-                <div><h4>Features you will <br>love & enjoy</h4>
+            <div class="feature">
+                <div ><h4 class="feature-style">Features you will <br>love & enjoy</h4>
                 </div>
-                  <div>  <p>“Heroic Programming, usually a pejorative term, is used to describe <br> the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.</p></div>
-                  <div><h4>Dexktop & Mobile Version</h4>
-                      <p>“Heroic Programming, usually a pejorative term, is used to describe <br> the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.</p></div>
-                  <div><h4>Drag & Drop Builder</h4>
-                      <p>“Heroic Programming, usually a pejorative term, is used to describe <br> the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.</p></div>
-                  <div><h4>Awesome Modern Design</h4>
-                      <p>“Heroic Programming, usually a pejorative term, is used to describe <br> the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.</p></div>
-                  <div><h4>Super Easy to Edit</h4> 
-                  <p>“Heroic Programming, usually a pejorative term, is used to describe <br> the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.</p></div>
+              <div class="feature-div">  <p class="feature-style-2">“Heroic Programming, usually a pejorative term, is used to describe the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.</p></div>
+
+                  <div class="section-describe"> <p><span class="description">Dexktop & Mobile Version  </span> <br>“Heroic Programming, usually a pejorative term, is used to describe  the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process. </p></div>
+
+                  <div class="section-describe"> <p><span class="description" >Drag & Drop Builder </span><br>“Heroic Programming, usually a pejorative term, is used to describe  the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.  </p></div> 
+
+                  <div class="section-describe" > <p><span class="description" >Awesome Modern Design </span><br>“Heroic Programming, usually a pejorative term, is used to describe  the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.  </p></div>
+
+                  <div class="section-describe"> <p><span class="description" >Super Easy to Edit </span><br>“Heroic Programming, usually a pejorative term, is used to describe  the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.  </p></div>
+                  
+                  
+                  
             </div>
          
               
               <div class="img2"><img src="/images/architect.png" alt="">
-              <button><span> 10+Year</span>Exprience </button></div></div>
+               <button class="section-3-button" ><span class="year-span"> 10 + YEAR</span> <br>Experience</button>
           
 
         </div>
+       
     </section>
+    <!-- FACT SECTION START HERE -->
+
+
+    <section class="section-4">
+<h1>Some Facts</h1>
+<p>There are many variations of passages of Lorem Ipsum available, but,<br> the majority have suffered alteration.</p>
+<section class="fact-img">
+    <div>
+        <img src="/images/icons/customers.png" alt="">
+        <h1>54</h1>
+        <p>Awards Winnings</p>
+    </div>
+    <div>
+        <img src="/images/icons/email.png" alt="">
+        <h1>1458</h1>
+        <p>Project Finished</p>
+    </div>
+    <div>
+        <img src="/images/icons/projects.png" alt="">
+        <h1>590</h1>
+        <p>Clients Worked</p>
+    </div>
+    <div>
+        <img src="/images/icons/ribon.png" alt="">
+        <h1>22578</h1>
+        <p>Email Send</p>
+    </div>
+</section>
+    
+
+
+
+
+
+
+
+
+
+</section>
 </body>
 </html>
