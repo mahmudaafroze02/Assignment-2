@@ -13,7 +13,7 @@
 }
 
 
-        .nav-section, .grid-section, .section-3, .section-4  {
+        .nav-section, .grid-section, .section-3, .section-4, .sponsor  {
             margin-left: 130px;
             margin-right: 130px;
         }
@@ -97,9 +97,9 @@
 
 
    .section-3-info{
-    display: flex
-    ;
-padding: 100px;}
+    display: flex;
+    padding left:  100px;}
+
     .feature{
         max-width: 40%;
     }
@@ -116,13 +116,12 @@ padding: 100px;}
     .feature-style{
         font-size: 30px;
         font-weight: 700px;
-margin-bottom: 5px;
-       
-    }
+        margin-bottom: 5px;}
    
     .feature-style-2{
         font-size: 13px;
         color: grey;
+      
     }
 .section-describe{
     width: 100%;
@@ -157,10 +156,14 @@ margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+ 
  
    }
    .fact-img img{
     padding-top: 10px;
+    
     
    }
    .fact-img  div{
@@ -171,9 +174,43 @@ margin-bottom: 5px;
     border-color: #ff900e;
     border-radius: 10px;
     border-width: 2px;
+    text-align: center;}
+
+    /* Sponsor section start haere */
+    .sponsor{
+        padding-top: 50px;
+    margin-top: 50px;
     text-align: center;
-   }
+       
+    }
+.last-icon{
+   display: flex;
+   justify-content: space-between;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+
+   
+   .last-icon img{
+    width: 70%;
+    height: 100%;
+    align-items: center;
   
+   }
+   /* Last Icon End Here */
+   .extra-work{
+   
+    width: 500px;
+    height: 100%;
+    background-color: bisque;
+    margin:0 auto;
+    }
+   
+   
+   
+   
+   
    </style>
 </head>
 <body>
@@ -234,10 +271,7 @@ margin-bottom: 5px;
                   <div class="section-describe" > <p><span class="description" >Awesome Modern Design </span><br>“Heroic Programming, usually a pejorative term, is used to describe  the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.  </p></div>
 
                   <div class="section-describe"> <p><span class="description" >Super Easy to Edit </span><br>“Heroic Programming, usually a pejorative term, is used to describe  the expenditure of huge amounts of (coding) effort by talented people to overcome shortcomings in process.  </p></div>
-                  
-                  
-                  
-            </div>
+                  </div>
          
               
               <div class="img2"><img src="/images/architect.png" alt="">
@@ -275,16 +309,29 @@ margin-bottom: 5px;
         <p>Email Send</p>
     </div>
 </section>
-    
-
-
-
-
-
-
-
-
-
 </section>
+  <!-- FACT SECTION END HERE -->
+  <Section class="sponsor">
+    <div class="describe-sponson">
+        <h4 class="feature-style">Our Sponspors</h4>
+<p>There are many variations of passages of Lorem Ipsum available<br> but the majority have suffered alteration.</p> </div>
+<div class="last-icon">
+    <div><img src="/images/sponsors/amazon.png" alt=""></div>
+    <div><img src="/images/sponsors/figma.png" alt=""></div>
+    <div><img src="/images/sponsors/google.png" alt=""></div>
+    <div><img src="/images/sponsors/spotify.png" alt=""></div>
+    <div><img src="/images/sponsors/telerama.png" alt=""></div>
+</div>
+
+  </Section>
+  <!-- last icon end here -->
+
+  <section>
+    <div class="extra-work">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lSsH0Sl53Gs" type="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+
 </body>
 </html>
